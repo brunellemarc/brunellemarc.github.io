@@ -4,43 +4,51 @@
 <head>
 <title>Marc Brunelle ~ Ottawa </title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<script language="JavaScript" type="text/JavaScript">
-<!--
 
+<style>    
 
-
-function MM_preloadImages() { //v3.0
- var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
- var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
- if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-//-->
-</script>
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function MM_reloadPage(init) { //reloads the window if Nav4 resized
- if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
- document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
- else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
-}
-MM_reloadPage(true);
-//-->
-</script>
-<style type="text/css">
-<!--
--->
-</style>
-<link href="../../../../../geog.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-<!--
-.style1 {
 	color: #800000;
 	font-weight: bold;
 	font-size: 14px;
-}
--->
+
+  /* Container for image + text */
+  .profile-wrap {
+    background-color: #E7E7E7;
+    padding: 10px;
+    /* clearfix: make sure the container includes the floated image’s height */
+    overflow: auto;
+  }
+
+  /* Float image left with some space */
+  .profile-photo {
+    float: left;
+    margin: 0 16px 8px 0; /* right and bottom spacing */
+    width: 237px;         /* your original width */
+    height: auto;         /* keep aspect ratio */
+    display: block;
+  }
+
+  /* Ensure paragraphs can wrap next to the float */
+  .profile-wrap p,
+  .profile-wrap .heading {
+    clear: none !important;   /* overrides any clear from geog.css */
+  }
+
+  /* Avoid global rules that make images full-width inside tables */
+  .maintext img {
+    max-width: none !important;
+  }
+
+  /* Mobile: stack image above text */
+  @media (max-width: 600px) {
+    .profile-photo {
+      float: none;
+      margin: 0 0 12px 0;
+      max-width: 100%;
+      height: auto;
+    }
+  }
 </style>
-</head>
 
 <body>
 		<p align="center"><img src="top_banner.jpg" alt="" width="750" height="225" border="0"></p>
@@ -63,17 +71,21 @@ MM_reloadPage(true);
 					<p align="center" class="contact"></p>
 					<p align="center" class="contact">----------------</p>
 					<p align="center" class="contact">&nbsp;</p>
-				</td>
+				</td>  
+        
+        
 				<td width="10" rowspan="2" align="left" valign="top" bordercolor="#FFFFFF" bgcolor="#FFFFFF"><img name="" src="(EmptyReference!)" width="10" height="10" alt="" style="background-color: #FFFFFF"></td>
-				<td width="229" align="left" valign="middle" bordercolor="#333333" bgcolor="#E7E7E7" class="maintext">
-					<div align="center">
-						<p>&nbsp;<img src="Marc2b.jpg" v:shapes="_x0000_s1477" height="400" width="270"></p>
-					</div>
-				</td><td width="377" align="left" valign="top" bordercolor="#333333" bgcolor="#E7E7E7" class="maintext">
-					<p class="heading"><font size="5" color="#d41113"><strong>Marc Brunelle</strong></font></p>
-					<p><strong>En quelques mots</strong><br>
-					 Je suis professeur titulaire au D&eacute;partement de linguistique de l'<a href="https://arts.uottawa.ca/linguistique/">Universit&eacute; d'Ottawa</a>. Je m'int&eacute;resse &agrave; la th&eacute;orie phonologique, &agrave; la phon&eacute;tique, aux tons et &agrave; l'intonation, au changement sonore et &agrave; l'effet du contact linguistique sur les syst&egrave;mes sonores. Mon travail porte essentiellement sur les langues d'Asie du sud-est, plus sp&eacute;cialement le vi&ecirc;tnamien et le cham, et implique une bonne composante de documentation linguistique.</p>
-					<p>Je suis aussi co-directeur du Laboratoire des structures sonores, un laboratoire &agrave; la fine pointe de la technologie subventionn&eacute; par la Fondation canadienne pour l'innovation.</p>
+<td colspan="2" align="left" valign="top" bordercolor="#333333" bgcolor="#E7E7E7" class="maintext">
+  <div class="profile-wrap">
+    <!-- The image must appear BEFORE the text for wrapping -->
+    <img src="Marc2b.jpg" alt="Marc Brunelle" class="profile-photo" width="237" height="286">
+
+    <p class="heading">
+      <font size="5" color="#0000a0"><strong>Marc Brunelle</strong></font>
+    </p>
+		<p><strong>En quelques mots</strong><br>
+		Je suis professeur titulaire au D&eacute;partement de linguistique de l'<a href="https://arts.uottawa.ca/linguistique/">Universit&eacute; d'Ottawa</a>. Je m'int&eacute;resse &agrave; la th&eacute;orie phonologique, &agrave; la phon&eacute;tique, aux tons et &agrave; l'intonation, au changement sonore et &agrave; l'effet du contact linguistique sur les syst&egrave;mes sonores. Mon travail porte essentiellement sur les langues d'Asie du sud-est, plus sp&eacute;cialement le vi&ecirc;tnamien et le cham, et implique une bonne composante de documentation linguistique.</p>
+		<p>Je suis aussi co-directeur du Laboratoire des structures sonores, un laboratoire &agrave; la fine pointe de la technologie subventionn&eacute; par la Fondation canadienne pour l'innovation.</p>
      <p>Je supervise des &eacute;tudiants de ma&icirc;trise et de doctorat qui travaillent sur la prosodie et/ou sur la phon&eacute;tique et la phonologie des langues d'Asie du sud-est. Si vous cherchez un superviseur, envoyez-moi un courriel d&eacute;taillant votre bagage acad&eacute;mique et vos int&eacute;r&ecirc;ts de recherche. </p>
 				</td>
 
@@ -81,17 +93,17 @@ MM_reloadPage(true);
  <tr bordercolor="#333333">
  <td colspan="2" align="left" valign="top" bordercolor="#333333" bgcolor="#E7E7E7" class="maintext">
 
- <span class="heading"><strong><font color="#d41113">LOGICIELS POUR LE TRAITEMENT AUTOMATIQUE DU VIETNAMIEN</font></strong><a name="link1"></a></span>
-  <p><a href="https://github.com/MontrealCorpusTools/MFA-reorganization-scripts/tree/master/Vietnamese">Montreal Corpus tools</a><font color="black">:  Outils pour la conversion automatique du qu&#7889;c ng&#7919; (&eacute;criture vietnamienne) vers l'alphabet phon&eacute;tique international et pour l'alignement automatique de transcriptions et d'enregistrements sud-vietnamiens (d&eacute;velopp&eacute;s par James Kirby et Michael McAuliffe).</font></p>
- 
- <span class="heading"><strong><font color="#d41113">PUBLICATIONS</font></strong><a name="link1"></a></span>
-  <p><strong><font color="#d41113">Contactez-moi pour obtenir une version &eacute;lectronique de tout article auquel vous n'avez pas acc&egrave;s</font></strong></p>
-         
-   <p><a href="https://www.degruyter.com/document/doi/10.1515/phon-2024-0032/html">(2025) Relating production and perception in two Raglai dialects at different stages of registrogenesis</a>. <em> Phonetica</em>. ahead of print (with &#272;inh L&#432; Giang et T&#7841; Th&#224;nh T&#7845;n).</p>                
-   <p><a href="https://www.degruyter.com/document/doi/10.1515/phon-2024-0023/html">(2025) Redundant voicign and register in R&#226;l&#226;m</a>. <em> Phonetica</em>. ahead of print (with &#272;inh L&#432; Giang et T&#7841; Th&#224;nh T&#7845;n).</p>       
-   <p><a href="https://www.cambridge.org/core/journals/journal-of-the-international-phonetic-association/article/voicing-or-register-in-jarai-dialects-implications-for-the-reconstruction-of-protochamic-and-for-registrogenesis/8912FE79EB5E19916EC0E4C009BC0932">(2024) Voicing or register in Jarai dialects? Implications for the reconstruction of Proto-Chamic and for registrogenesis</a>. <em> Journal of the International Phonetic Association</em>. first view: 1-42.</p>    
-   <p><a href="https://global.oup.com/academic/product/the-oxford-guide-to-the-malayo-polynesian-languages-of-southeast-asia-9780198807353?cc=ca&lang=en&">(2024) Historical linguistics of the Chamic languages: their position in Malayo-Polynesian and their internal subgrouping</a>. <em> Oxford guide to the Malayo-Polynesian Languages of Southeast Asia</em>. S. Adelaar et A. Schapper (&eacute;ds.). Oxford University Press.</p>    
-   <p><a href="https://global.oup.com/academic/product/the-oxford-guide-to-the-malayo-polynesian-languages-of-southeast-asia-9780198807353?cc=ca&lang=en&">(2024) A sketch of Chamic phonology and morphosyntax</a>. <em> Oxford guide to the Malayo-Polynesian Languages of Southeast Asia</em>. S. Adelaar et A. Schapper (&eacute;ds.). Oxford University Press (avec Joshua Jensen).</p>
+ <span class="heading"><strong><font color="#0000a0">PUBLICATIONS</font></strong><a name="link1"></a></span>
+  <p><strong><font color="#000000">Contactez-moi pour obtenir une version &eacute;lectronique de tout article auquel vous n'avez pas acc&egrave;s</font></strong></p>
+       
+   <p><a href="https://www.sciencedirect.com/science/chapter/referencework/abs/pii/B9780323955041003562?via%3Dihub">(2025) The Phonology of Vietnamese</a>. <em>International Encyclopedia of Language and Linguistics, 3rd Edition</em>, D. Kavitskaia (&eacute;d.), Elsevier </p>
+   <p><a href="https://evols.library.manoa.hawaii.edu/server/api/core/bitstreams/72fd76c0-08c5-4c6f-9401-a923890fc5ec/content">(2025) An ultrasound study of the role of larynx height and tongue movement in the production of Javanese onset stops</a>. <em> Journal of the Southeast Asian Linguistics Society</em>. 18, 2, 93-119 (avec Daniel Schweizer et Suzy Ahn).</p> 
+   <p><a href="https://www.cambridge.org/core/journals/journal-of-the-international-phonetic-association/article/laryngeal-and-lingual-ultrasound-study-of-the-canadian-french-voicing-contrast/5CFA6CC1AB4783A9860AA74007C2D04F">(2025) A laryngeal and lingual ultrasound study of the Canadian French voicing contrast</a>. <em>Journal of the International Phonetic Association</em>. 55(1-2), 35-64. (avec Daniel Schweizer, Suzy Anh et Anika Audet).</p>  
+   <p><a href="https://www.degruyter.com/document/doi/10.1515/phon-2024-0032/html">(2025) Relating production and perception in two Raglai dialects at different stages of registrogenesis</a>. <em> Phonetica</em>. 82, 1, 87-110 (avec &#272;inh L&#432; Giang et T&#7841; Th&#224;nh T&#7845;n).</p>                
+   <p><a href="https://www.degruyter.com/document/doi/10.1515/phon-2024-0023/html">(2025) Redundant voicing and register in Mnong R&#226;l&#226;m</a>. <em> Phonetica</em>. 82, 1, 45-85 (avec &#272;inh L&#432; Giang et T&#7841; Th&#224;nh T&#7845;n).</p>       
+   <p><a href="https://www.cambridge.org/core/journals/journal-of-the-international-phonetic-association/article/voicing-or-register-in-jarai-dialects-implications-for-the-reconstruction-of-protochamic-and-for-registrogenesis/8912FE79EB5E19916EC0E4C009BC0932">(2024) Voicing or register in Jarai dialects? Implications for the reconstruction of Proto-Chamic and for registrogenesis</a>. <em> Journal of the International Phonetic Association</em>. 54, 2, 635-676. (avec Leb Ke, T&#7841; Th&#224;nh T&#7845;n and &#272;inh L&#432; Giang)</p>    
+   <p><a href="https://global.oup.com/academic/product/the-oxford-guide-to-the-malayo-polynesian-languages-of-southeast-asia-9780198807353?cc=ca&lang=en&">(2024) Historical linguistics of the Chamic languages: their position in Malayo-Polynesian and their internal subgrouping</a>. <em> Oxford guide to the Malayo-Polynesian Languages of Southeast Asia</em>. S. Adelaar et A. Schapper (&eacute;ds.). Oxford University Press, 143-149.</p>    
+   <p><a href="https://global.oup.com/academic/product/the-oxford-guide-to-the-malayo-polynesian-languages-of-southeast-asia-9780198807353?cc=ca&lang=en&">(2024) A sketch of Chamic phonology and morphosyntax</a>. <em> Oxford guide to the Malayo-Polynesian Languages of Southeast Asia</em>. S. Adelaar et A. Schapper (&eacute;ds.). Oxford University Press (avec Joshua Jensen), 455-469.</p>
    <p><a href="http://peninsule.free.fr/pages/24alhomepag.html">(2023) In memoriam: G&#233;rard Diffloth (1939-1923)</a>. <em> P&#233;ninsule</em>. LIV, 87, 2, 15-28.</p>
    <p><a href="https://www.internationalphoneticassociation.org/icphs-proceedings/ICPhS2023/full_papers/177.pdf"> (2023) Voicing and Register in Mnong R&#226;l&#226;m</a>. <em> Proceedings of the 20th International Congress of Phonetic Sciences</em>. ID177, 5p (avec T&#7841; Th&#224;nh T&#7845;n et &#272;inh L&#432; Giang).</p>
    <p><a href="https://www.degruyter.com/document/doi/10.1515/phon-2022-0029/html"> (2022) Transphonologization of onset voicing:  Revisiting Northern and Eastern Kmhmu'</a>. <em> Phonetica </em>. 79 (6), pp. 591-629. (avec James Kirby et Pittayawat Pittayaporn).</p> 
@@ -99,7 +111,7 @@ MM_reloadPage(true);
 	 <p><a href="https://evols.library.manoa.hawaii.edu/handle/10524/52500"> (2022) Individual and task-conditioned variation in the intonation of Southern Vietnamese</a>. <em> Vietnamese Linguistics: State of the Field, Journal of the Southeast Asian Linguistics Society special publication N. 9. </em> T.Phan, J. Phan et M. Alves (&eacute;ds.). University of Hawai'i Press. pp. 80-103. (avec Ph&#7841;m Thu H&#224;).</p>
 	 <p><a href="https://www.sciencedirect.com/science/article/pii/S0095447021000905"> (2022) Voicing and register in Ng&#227;i Giao Chrau: Production and perception studies</a>. <em>Journal of Phonetics</em>, 90, 38 p.(avec T&#7841; Th&#224;nh T&#7845;n et Nguy&#7877;n Tr&#7847;n Qu&#253;).</p>
 	 <p><a href="https://www.degruyter.com/document/doi/10.1515/9783110558142-029/html"> (2021) Register in languages of Mainland Southeast Asia: the state of the art</a>. <em>Guide to Mainland Southeast Asian Linguistic Structures</em>. P. Sidwell et M. Jenny (eds.). DeGruyter Mouton. pp. 683-706. (avec T&#7841; Th&#224;nh T&#7845;n).</p>
-     <p><a href="https://global.oup.com/academic/product/the-oxford-handbook-of-language-prosody-9780198832232?cc=us&lang=en&#"> (2020) Prosodic Systems of Mainland Southeast Asia</a>. <em>The Oxford Handbook of Language Prosody. </em> C. Gussenhoven et A. Chen (&eacute;ds.). Oxford University Press. pp. 344-354 (avec James Kirby, Alexis Michaud and Justin Watkins)</p>
+     <p><a href="https://global.oup.com/academic/product/the-oxford-handbook-of-language-prosody-9780198832232?cc=us&lang=en&#"> (2020) Prosodic Systems of Mainland Southeast Asia</a>. <em>The Oxford Handbook of Language Prosody. </em> C. Gussenhoven et A. Chen (&eacute;ds.). Oxford University Press. pp. 344-354 (avec James Kirby, Alexis Michaud et Justin Watkins)</p>
      <p><a href="http://jshe.ued.udn.vn/index.php/jshe/article/view/903"> (2020 Interaction between intonation and lexical tone in southern Vietnamese discourse markers</a>. <em>UED Journal of Social Sciences, Humanities and Education</em> 10 (15), pp. 19-28 (avec Ph&#7841;m Thu H&#224; and Ho&#224ng D&#361;ng). </p>
 	 <p><a href="https://doi.org/10.5334/labphon.278"> (2020) Transphonologization of voicing in Chru: Studies in production and perception</a>. <em>Laboratory Phonology: Journal of the Association for Laboratory Phonology </em>11(1): 15, 1-33 (avec T&#7841;, Th&#224;nh T&#7845;n, James Kirby et &#272;inh L&#432; Giang)</p>
   	 <p><a href="https://www.benjamins.com/catalog/tsl.129"> (2020) The loss of affixation in Cham: contact, internal drift and the limits of linguistic history</a>. <em> Austronesian undressed</em>. D. Gil and A. Schapper (&eacute;ds.). De Gruyter Mouton, 97-118.</p>
@@ -139,11 +151,16 @@ MM_reloadPage(true);
      <p><a href="Brunelle_Dissertation.pdf">(2005) Eastern Cham Register: Phonetic, Phonological and Sociolinguistic Approaches</a>. Th&egrave;se doctorale, Cornell University.</p>
      <p><a href="http://www.sealang.net/archives/mks/pdf/35:121-131.pdf">(2005) Register and tone in Eastern Cham: Evidence from a word game</a>. <em>Mon-Khmer Studies</em>, 35, 121-131.</p>
 					
-					<p class="MsoNormal" style="margin-bottom:14.0pt">&nbsp;</p>
+					<p class="MsoNormal" style="margin-bottom:14.0pt">&nbsp;</p>    
 					<p><a href="Karen%20papers.pdf">Travaux des &eacute;tudiants du cours de travail de terrain 2010, sur le karen sgaw</a></p>
-					<p><b></b></p>
-					<p>&nbsp;</p>
-					<p><strong class="heading"><font color="#d41113">POUR ME REJOINDRE</font></strong><a name="link"></a></p>
+					<p><b></b></p>   
+          <p>&nbsp;</p>
+                    
+           <span class="heading"><strong><font color="#0000a0">LOGICIELS POUR LE TRAITEMENT AUTOMATIQUE DU VIETNAMIEN</font></strong><a name="link1"></a></span>
+           <p><a href="https://github.com/MontrealCorpusTools/MFA-reorganization-scripts/tree/master/Vietnamese">Montreal Corpus tools</a><font color="black">:  Outils pour la conversion automatique du qu&#7889;c ng&#7919; (&eacute;criture vietnamienne) vers l'alphabet phon&eacute;tique international et pour l'alignement automatique de transcriptions et d'enregistrements sud-vietnamiens (d&eacute;velopp&eacute;s par James Kirby et Michael McAuliffe).</font></p>
+              
+          <p class="MsoNormal" style="margin-bottom:14.0pt">&nbsp;</p> 
+					<p><strong class="heading"><font color="#0000ao">POUR ME REJOINDRE</font></strong><a name="link"></a></p>
 					<p>Marc Brunelle </p>
 					<p>D&eacute;partement de Linguistique, 70 Laurier Est, bureau 429</p>
 					<p>Universit&eacute; d'Ottawa Ottawa, Ontario Canada, K1N 6N5</p>

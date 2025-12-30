@@ -4,46 +4,51 @@
 <head>
 <title>Marc Brunelle ~ Ottawa </title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<script language="JavaScript" type="text/JavaScript">
-<!--
+   
+<style>    
 
-
-
-function MM_preloadImages() { //v3.0
- var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
- var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
- if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-//-->
-</script>
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function MM_reloadPage(init) { //reloads the window if Nav4 resized
- if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
- document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
- else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
-}
-MM_reloadPage(true);
-//-->
-</script>
-<style type="text/css">
-<!--
--->
-</style>
-<link href="../../../../../geog.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-<!--
-.style1 {
 	color: #800000;
 	font-weight: bold;
 	font-size: 14px;
-}
-.maintext p .heading strong font {
-	color: #D41113;
-}
--->
+
+  /* Container for image + text */
+  .profile-wrap {
+    background-color: #E7E7E7;
+    padding: 10px;
+    /* clearfix: make sure the container includes the floated image’s height */
+    overflow: auto;
+  }
+
+  /* Float image left with some space */
+  .profile-photo {
+    float: left;
+    margin: 0 16px 8px 0; /* right and bottom spacing */
+    width: 237px;         /* your original width */
+    height: auto;         /* keep aspect ratio */
+    display: block;
+  }
+
+  /* Ensure paragraphs can wrap next to the float */
+  .profile-wrap p,
+  .profile-wrap .heading {
+    clear: none !important;   /* overrides any clear from geog.css */
+  }
+
+  /* Avoid global rules that make images full-width inside tables */
+  .maintext img {
+    max-width: none !important;
+  }
+
+  /* Mobile: stack image above text */
+  @media (max-width: 600px) {
+    .profile-photo {
+      float: none;
+      margin: 0 0 12px 0;
+      max-width: 100%;
+      height: auto;
+    }
+  }
 </style>
-</head>
 
 <body>
 		<p align="center"><img src="top_banner.jpg" alt="" width="750" height="225" border="0"></p>
@@ -65,33 +70,52 @@ MM_reloadPage(true);
 					<p align="center" class="contact"></p>
 					<p align="center" class="contact">----------------</p>
 					<p align="center" class="contact">&nbsp;</p>
-				</td>
+				</td>   
+        
 				<td width="10" rowspan="2" align="left" valign="top" bordercolor="#FFFFFF" bgcolor="#FFFFFF"><img name="" src="(EmptyReference!)" width="10" height="10" alt="" style="background-color: #FFFFFF"></td>
-				<td width="229" align="left" valign="middle" bordercolor="#333333" bgcolor="#E7E7E7" class="maintext">
-					<div align="center">
-						<p>&nbsp;<img src="Marc2b.jpg" v:shapes="_x0000_s1477" height="400" width="270"></p>
-					</div>
-				</td><td width="270" align="left" valign="top" bordercolor="#333333" bgcolor="#E7E7E7" class="maintext">
-					<p class="heading"><font size="5" color="#d41113"><strong>Marc Brunelle</strong></font></p>
-					<p><strong>About me</strong><br>
-					<span>I am a professor in the</span> Department of Linguistics at the <a href="https://arts.uottawa.ca/linguistics">University of Ottawa</a>. My main interests are phonological theory, phonetics, tone and intonation, sound change and the effect of language contact on sound systems.&nbsp;My research focuses on Southeast Asian languages, especially Vietnamese and Cham, and involves a significant amount of language documentation.</p>
-					<p>I am also co-director of the Sound Patterns Laboratory, a state of the art phonetics lab funded by the Canadian Foundation for Innovation.</p>
-					<p>I supervise graduate students working on prosody and/or Southeast Asian phonetics and phonology. If you are looking for a supervisor, please send me an email detailing your academic background and research interests.<br>
-				 </p></td>
+<td colspan="2" align="left" valign="top" bordercolor="#333333" bgcolor="#E7E7E7" class="maintext">
+  <div class="profile-wrap">
+    <!-- The image must appear BEFORE the text for wrapping -->
+    <img src="Marc2b.jpg" alt="Marc Brunelle" class="profile-photo" width="237" height="286">
+
+    <p class="heading">
+      <font size="5" color="#0000a0"><strong>Marc Brunelle</strong></font>
+    </p>
+
+    <p><strong>About me</strong><br>
+      <span>I am a professor in the</span> Department of Linguistics at the
+      <a href="https://arts.uottawa.ca/linguistics">University of Ottawa</a>.
+      My main interests are phonological theory, phonetics, tone and intonation, sound change and
+      the effect of language contact on sound systems.&nbsp;My research focuses on Southeast Asian
+      languages, especially Vietnamese and Cham, and involves a significant amount of language documentation.
+    </p>
+
+    <p>
+      I am also co-director of the Sound Patterns Laboratory, a state of the art phonetics lab funded
+      by the Canadian Foundation for Innovation.
+    </p>
+
+    <p>
+      I supervise graduate students working on prosody and/or Southeast Asian phonetics and phonology.
+      If you are looking for a supervisor, please send me an email detailing your academic background
+      and research interests.
+    </p>
+  </div>
+</td>
+
  </tr>
  <tr bordercolor="#333333">
  <td colspan="2" align="left" valign="top" bordercolor="#333333" bgcolor="#E7E7E7" class="maintext">
  
- 
- <span class="heading"><strong><font color="#d41113">SOFTWARE FOR VIETNAMESE LANGUAGE PROCESSING</font></strong><a name="link1"></a></span>
-  <p><a href="https://github.com/MontrealCorpusTools/MFA-reorganization-scripts/tree/master/Vietnamese">Montreal Corpus tools</a><font color="black">:  Tools for automatic conversion of qu&#7889;c ng&#7919; (Vietnamese script) to the International Phonetic Alphabet and for forced-alignment of southern Vietnamese transcriptions and recordings (developped by James Kirby and Michael McAuliffe).</font></p>
- 
- 
- <span class="heading"><strong><font color="#d41113">PUBLICATIONS</font></strong><a name="link1"></a></span>&nbsp;
-	 <p><strong><font color="#d41113">If you cannot access a paper, contact me to get an electronic version</font></strong></p>
-	 
-   <p><a href="https://www.degruyter.com/document/doi/10.1515/phon-2024-0032/html">(2025) Relating production and perception in two Raglai dialects at different stages of registrogenesis</a>. <em> Phonetica</em>. ahead of print (with &#272;inh L&#432; Giang and T&#7841; Th&#224;nh T&#7845;n).</p>                
-   <p><a href="https://www.degruyter.com/document/doi/10.1515/phon-2024-0023/html">(2025) Redundant voicign and register in R&#226;l&#226;m</a>. <em> Phonetica</em>. ahead of print (with &#272;inh L&#432; Giang and T&#7841; Th&#224;nh T&#7845;n).</p>    
+     
+ <span class="heading"><strong><font color="#0000a0">PUBLICATIONS</font></strong><a name="link1"></a></span>&nbsp;
+	 <p><strong><font color="#000000">If you cannot access a paper, contact me to get an electronic version</font></strong></p>
+	        
+   <p><a href="https://www.sciencedirect.com/science/chapter/referencework/abs/pii/B9780323955041003562?via%3Dihub">(2025) The Phonology of Vietnamese</a>. <em>International Encyclopedia of Language and Linguistics, 3rd Edition</em>, D. Kavitskaia (ed.), Elsevier. </p>
+   <p><a href="https://evols.library.manoa.hawaii.edu/server/api/core/bitstreams/72fd76c0-08c5-4c6f-9401-a923890fc5ec/content">(2025) An ultrasound study of the role of larynx height and tongue movement in the production of Javanese onset stops</a>. <em> Journal of the Southeast Asian Linguistics Society</em>. 18, 2, 93-119 (with Daniel Schweizer and Suzy Ahn).</p> 
+   <p><a href="https://www.cambridge.org/core/journals/journal-of-the-international-phonetic-association/article/laryngeal-and-lingual-ultrasound-study-of-the-canadian-french-voicing-contrast/5CFA6CC1AB4783A9860AA74007C2D04F">(2025) A laryngeal and lingual ultrasound study of the Canadian French voicing contrast</a>. <em>Journal of the International Phonetic Association</em>. 55(1-2), 35-64. (with Daniel Schweizer, Suzy Anh et Anika Audet).</p>  
+   <p><a href="https://www.degruyter.com/document/doi/10.1515/phon-2024-0032/html">(2025) Relating production and perception in two Raglai dialects at different stages of registrogenesis</a>. <em> Phonetica</em>. 82, 1, 87-110 (with &#272;inh L&#432; Giang and T&#7841; Th&#224;nh T&#7845;n).</p>                
+   <p><a href="https://www.degruyter.com/document/doi/10.1515/phon-2024-0023/html">(2025) Redundant voicing and register in Mnong R&#226;l&#226;m</a>. <em> Phonetica</em>. 82, 1, 45-85 (with &#272;inh L&#432; Giang and T&#7841; Th&#224;nh T&#7845;n).</p>       
    <p><a href="https://www.cambridge.org/core/journals/journal-of-the-international-phonetic-association/article/voicing-or-register-in-jarai-dialects-implications-for-the-reconstruction-of-protochamic-and-for-registrogenesis/8912FE79EB5E19916EC0E4C009BC0932">(2024) Voicing or register in Jarai dialects? Implications for the reconstruction of Proto-Chamic and for registrogenesis</a>. <em> Journal of the International Phonetic Association</em>. first view: 1-42 (with Leb Ke,T&#7841; Th&#224;nh T&#7845;n and &#272;inh L&#432; Giang).</p>    
    <p><a href="https://global.oup.com/academic/product/the-oxford-guide-to-the-malayo-polynesian-languages-of-southeast-asia-9780198807353?cc=ca&lang=en&">(2024) Historical linguistics of the Chamic languages: their position in Malayo-Polynesian and their internal subgrouping</a>. <em> Oxford guide to the Malayo-Polynesian Languages of Southeast Asia</em>. S. Adelaar and A. Schapper (eds.). Oxford University Press.</p>    
    <p><a href="https://global.oup.com/academic/product/the-oxford-guide-to-the-malayo-polynesian-languages-of-southeast-asia-9780198807353?cc=ca&lang=en&">(2024) A sketch of Chamic phonology and morphosyntax</a>. <em> Oxford guide to the Malayo-Polynesian Languages of Southeast Asia</em>. S. Adelaar and A. Schapper (eds.). Oxford University Press (with Joshua Jensen).</p>
@@ -144,10 +168,15 @@ MM_reloadPage(true);
 					
 					<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt">&nbsp;</p>
 					<p><a href="Karen%20papers.pdf">Students papers written for the 2010 Field Methods course on Sgaw Karen</a>
-					<p>&nbsp;</p>
-					<p><strong class="heading"><font color="#d41113">Contact me</font></strong><a name="link"></a></p>
+					<p>&nbsp;</p>     
+          
+           <span class="heading"><strong><font color="#0000a0">SOFTWARE FOR VIETNAMESE LANGUAGE PROCESSING</font></strong><a name="link1"></a></span>
+           <p><a href="https://github.com/MontrealCorpusTools/MFA-reorganization-scripts/tree/master/Vietnamese">Montreal Corpus tools</a><font color="black">:  Tools for automatic conversion of qu&#7889;c ng&#7919; (Vietnamese script) to the International Phonetic Alphabet and for forced-alignment of southern Vietnamese transcriptions and recordings (developped by James Kirby and Michael McAuliffe).</font></p>
+           <p>&nbsp;</p> 
+          
+					<p><strong class="heading"><font color="#0000a0">CONTACT ME</font></strong><a name="link"></a></p>
 					<p>Marc Brunelle </p>
-					<p>Dept. of Linguistics, 70 Laurier East, room 429 </p>
+					<p>Dept. of Linguistics, 70 Laurier East, office 429 </p>
 					<p>University of Ottawa Ottawa, ON Canada K1N 6N5 &nbsp;</p>
 					<p>Email:&nbsp;<img src="email.gif" v:shapes="_x0000_s1464" height="14" width="148"></p>
 					<div align="center">
